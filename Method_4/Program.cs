@@ -1,6 +1,6 @@
-﻿void polosa()
+void polosa()
 {
-    Console.WriteLine("=====================================");
+    Console.WriteLine("============================================================");
 }
 void SayHellowRu()
 {
@@ -23,13 +23,14 @@ void SayHelloFr()
 void UnketaRu()
 {
     polosa();
-    Console.WriteLine("--- Анкета нового пользователя ---");
+    Console.WriteLine("\t    --- Анкета нового пользователя ---");
     polosa();
     Console.Write("Введите ваше имя: "); string Name = Convert.ToString(Console.ReadLine()!);
     Console.Write("Введите вашу фамилию: "); string SurName = Convert.ToString(Console.ReadLine()!);
     Console.Write("Введите вашу дату рождения в формате ДД.ММ.ГГГГ: "); DateTime age = DateTime.Parse(Console.ReadLine()!);
     polosa();
-    Console.WriteLine("--- Профиль пользователя создан ---");
+    Console.WriteLine("\t    --- Профиль пользователя создан ---");
+    polosa();
     Console.WriteLine($"Имя: {Name}\nФамилия: {SurName}\nВаша дата рождения: {age.ToString("dd.MM.yyyy")}");
     polosa();
 }
@@ -37,13 +38,14 @@ void UnketaRu()
 void UnketaEn()
 {
     polosa();
-    Console.WriteLine("--- New User Questionnaire ---");
+    Console.WriteLine("\t       --- New User Questionnaire ---");
     polosa();
     Console.Write("Enter your first name: "); string Name = Convert.ToString(Console.ReadLine()!);
     Console.Write("Enter your last name: "); string SurName = Convert.ToString(Console.ReadLine()!);
     Console.Write("Enter your date of birth in DD.MM.YYYY format: "); DateTime age = DateTime.Parse(Console.ReadLine()!);
     polosa();
-    Console.WriteLine("--- User profile created ---");
+    Console.WriteLine("\t        --- User profile created ---");
+    polosa();
     Console.WriteLine($"First Name: {Name}\nLast Name: {SurName}\nDate of Birth: {age.ToString("dd.MM.yyyy")}");
     polosa();
 }
@@ -51,13 +53,14 @@ void UnketaEn()
 void UnketaFr()
 {
     polosa();
-    Console.WriteLine("--- Formulaire de nouvel utilisateur ---");
+    Console.WriteLine("\t  --- Formulaire de nouvel utilisateur ---");
     polosa();
     Console.Write("Veuillez saisir votre prénom: "); string Name = Convert.ToString(Console.ReadLine()!);
     Console.Write("Veuillez saisir votre nom de famille: "); string SurName = Convert.ToString(Console.ReadLine()!);
     Console.Write("Veuillez saisir votre date de naissance au format JJ.MM.AAAA: "); DateTime age = DateTime.Parse(Console.ReadLine()!);
     polosa();
-    Console.WriteLine("--- Profil utilisateur créé ---");
+    Console.WriteLine("\t      --- Profil utilisateur créé ---");
+    polosa();
     Console.WriteLine($"Nom: {Name}\nPrénom: {SurName}\nVotre date de naissance: {age.ToString("dd.MM.yyyy")}");
     polosa();
 }
